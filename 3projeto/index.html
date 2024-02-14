@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page filme do Mário</title>
     <link rel="stylesheet" href="styles/global.css">
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="background">
         <video loop autoplay muted>
@@ -52,14 +57,28 @@
             </div>
         </header>
         <main>
-            <div id="main_info">
-                <img src="assets/logo-movie.png" alt="logo-movie">
+            <div class="main_info">
+                <img
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out" 
+                src="assets/logo-movie.png" alt="logo-movie" width="250px">
 
-                <p>
+                <p
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="300" 
+                >
                     Um dia, Mario e Luigi vão para no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, Bowser, que vai fazer de tudo para conseguir reinar todos os lugares. É então quando Luigi é raptado por Bowser e o usa para procurar Mario, o único capaz de deter o Koopa e reestabelexcer a paz.
                 </p>
 
-                <div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="600"
+                >
                     <a href="#">Assistir treiler</a>
                     <button>
                         Comprar ingresso
@@ -67,8 +86,19 @@
                 </div>
             </div>
 
-            <img src="assets/mario-and-luigi.png" alt="mario-and-luigi">
+            <img 
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300" 
+            src="assets/mario-and-luigi.png" alt="mario-and-luigi" width="680px">
         </main>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">     
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
