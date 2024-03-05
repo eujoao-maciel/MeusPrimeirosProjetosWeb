@@ -150,3 +150,29 @@ header #navigation li a:hover {
     transform: scale(0.5);
     filter: invert();
 }
+
+#box-image {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+
+#box-image img {
+    width: 200px;
+}
+
+#box-image .img1 {
+    transform: rotate(-15deg);
+}
+
+#box-image .img2 {
+    transform: rotate(5deg);
+}
+
+#box-image .img3 {
+    transform: rotate(15deg);
+}
+
+#box-image .img4 {
+    transform: rotate(-15deg);
+}
