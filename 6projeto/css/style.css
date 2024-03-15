@@ -86,3 +86,73 @@ header {
     width: 100%;
 }
 
+/* Conteúdo principal */
+
+main {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Textos principais */
+
+#primary-text {
+    width: 850px;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#second-text {
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: rgb(165, 165, 165);
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#btns button {
+    width: 240px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 12px;
+    position: relative;
+    transition: 1.5s;
+}
+
+#btns button:before {
+    content: '';
+    border-radius: 12px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 0px;
+    height: 50px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+
+}
+
+#btns button:hover:before {
+    width: 100%;
+}
