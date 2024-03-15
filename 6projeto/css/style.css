@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Zerando o CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1));
+    background: url('/MeusPrimeirosProjetosWeb/6projeto/img/img5.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px; 
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background: rgba(22, 22, 22, 0.2);
+}
+
+#menu-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+#tittle {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#menu-content ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+#menu-content ul a img {
+    width: 25px;
+}
+
+#menu-content ul a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem;
+    transition: 2ms ease-in;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#menu-content ul a:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background:  rgb(251,255, 0);
+    transition: all 1.5s ease;
+}
+
+#menu-content ul a:hover:before {
+    width: 100%;
+}
+
